@@ -4,6 +4,10 @@ from textblob import TextBlob
 import sqlite3
 import os
 
+import nltk
+
+nltk.download('punkt')
+
 app = Flask(__name__)
 CORS(app)
 
